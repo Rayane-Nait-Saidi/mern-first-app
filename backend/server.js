@@ -3,14 +3,12 @@ const express = require('express') ;
 const mongoose = require('mongoose') ; 
 const app = express() ; 
 const cors = require('cors') ;
-
-require("dotenv").config();
-
 app.use(cors()) ; 
 app.use(express.json()) ; 
 async function run() {
     try{
-       await mongoose.connect(process.env.MONGO_URI) ;
+       
+       await mongoose.connect("MONGO_URI=mongodb+srv://nrnaitsaidi_db_user:rLKMCeuC6kzuMrjw@merncluster.pkv2lc8.mongodb.net/todoapp?retryWrites=true&w=majority&appName=mernCluster") ;
        console.log("Connected ✅") ;
        const Schema = new mongoose.Schema({
          username:String , 
@@ -82,8 +80,8 @@ async function run() {
        app.listen(5000,()=>{
         console.log("Server listening on port 5000...") ;
        }) ; 
-    }catch{
-       console.log("Error ❌") ; 
+    }catch(err){
+       console.log("Error ❌",err) ; 
     }
 }
 
