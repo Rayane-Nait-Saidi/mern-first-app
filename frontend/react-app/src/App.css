@@ -1,0 +1,679 @@
+/*App.css*/
+.register-sign{
+    width: 100%;
+    height: 100%;
+}
+
+.register-sign-large{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register-sign-large #logo{
+    font-size: 3em;
+    margin-top: 30px;
+}
+
+.register-sign-large #logo span{
+    color: rgb(126, 126, 248);
+}
+
+.register-sign-page{
+    margin-top: 20px;
+    width: 100%;
+    height: 80vh;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-sign-box{
+    width: 40%;
+    height: fit-content;
+    border: 1px solid rgb(202, 187, 187);
+    box-shadow: 6px 6px 6px rgb(197, 188, 188);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.sign{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.sign form{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.sign form input{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    border: 1px solid rgb(202, 187, 187);
+    box-shadow: 3px 3px 3px rgb(197, 188, 188);
+    border-radius: 5px;
+    outline: none;
+    background-color: rgb(227, 227, 251);
+}
+
+.sign form button{
+    width: 80%;
+    text-align: center;
+    height: 30px;
+    background-color: rgb(126, 126, 248);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.sign form button:disabled{
+    color: rgb(215, 202, 202);
+    cursor: not-allowed;
+}
+
+#register-link{
+    color: rgb(126, 126, 248);
+}
+
+#register-link:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.register{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.register form{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.register form input{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    border: 1px solid rgb(202, 187, 187);
+    box-shadow: 3px 3px 3px rgb(197, 188, 188);
+    border-radius: 5px;
+    outline: none;
+    background-color: rgb(227, 227, 251);
+}
+
+.register form button{
+    width: 80%;
+    text-align: center;
+    height: 30px;
+    background-color: rgb(126, 126, 248);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.register form button:disabled{
+    color: rgb(215, 202, 202);     
+    cursor: not-allowed;
+}
+
+
+#sign-link{
+    color: rgb(126, 126, 248);
+}
+
+#sign-link:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.navbar{
+    width: 100%;
+    height: 100%;
+}
+
+.large-home{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*background-color: green;*/
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 5%;
+}
+
+#home-logo{
+    font-size: 2.4rem;
+}
+
+#home-logo span{
+    color: rgb(126, 126, 248);
+}
+
+nav{
+    margin-top: 10px;
+}
+
+nav .link{
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-left: 20px;
+    transition: all 0.3s ease;
+}
+
+nav .link:hover{
+    color: rgb(126, 126, 248);
+}
+
+.add-home-large{
+    width: 100%;
+    min-height: 80vh;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-box{
+    width: 40%;
+    height: fit-content;
+    padding: 25px 5%;
+    border: 1px solid rgb(202, 187, 187);
+    box-shadow: 6px 6px 6px rgb(197, 188, 188);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-box form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.add-box form input{
+     width: 100%;
+    height: 30px;
+    text-align: center;
+    border: 1px solid rgb(202, 187, 187);
+    box-shadow: 3px 3px 3px rgb(197, 188, 188);
+    border-radius: 5px;
+    outline: none;
+    background-color: rgb(227, 227, 251);
+}
+
+.add-box form button{
+    width: 80%;
+    text-align: center;
+    height: 30px;
+    background-color: rgb(126, 126, 248);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s ease;
+    margin-top: 30px; 
+}
+
+.add-box form button:disabled{
+    color: rgb(215, 202, 202);     
+    cursor: not-allowed;
+}
+
+.notelist-page-large{
+    width: 100%;
+    min-height: 80vh;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.notelist-box{
+    width: 40%;
+    height: 50%;
+    padding: 25px 5%;
+    border: 1px solid rgb(202, 187, 187);
+    box-shadow: 6px 6px 6px rgb(197, 188, 188);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+
+
+.delete-note{
+  width: 120px; /* make it larger so text fits */
+  height: fit-content;
+  padding: 10px 5%;
+  z-index: 100;
+  background-color: rgb(126, 126, 248);
+  position: absolute;
+  top: -80px;   /* relative to the clicked note container */
+  left: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  color: white;
+}
+
+/* By default, show the large version */
+.register-sign-large,
+.large-home,
+.add-home-large,
+.notelist-page-large {
+  display: flex;
+}
+
+.register-sign-small,
+.small-home,
+.add-home-small,
+.notelist-page-small {
+  display: none;
+}
+
+.account-page-large{
+    width: 100%;
+    min-height: 80vh;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.account-box{
+    width: 80%;
+    height: fit-content;
+    
+    border: 1px solid rgb(202, 187, 187);
+    box-shadow: 6px 6px 6px rgb(197, 188, 188);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.accounts-buttons{
+    width: 100%;
+    /*background-color: green;*/
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    padding: 25px 5%;
+}
+
+.accounts-buttons button{
+    border: none;
+    background-color: rgb(126, 126, 248);
+    border-radius: 5px;
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.accounts-buttons button:hover{
+    background-color: rgb(133, 133, 250);
+}
+
+
+
+
+.register-sign-small{
+    
+    display: none;
+}
+
+.account-page-small{
+    display: none;
+}
+
+@media (max-width:768px) {
+    .register-sign-large,
+    .large-home,
+    .add-home-large,
+    .notelist-page-large,
+    .account-page-large{
+        display: none;
+    }
+
+    .register-sign-small{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .register-sign-small h1{
+        margin-top: 30px;
+        font-size: 2.6rem;
+        margin-bottom: 30px;
+    }
+
+    .register-sign-small h1 span{
+        color: rgb(126, 126, 248);
+    }
+
+    .register-sign-page-small{
+        width: 100%;
+        min-height: 60vh;
+        height: fit-content;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sign-small{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+
+    .sign-small form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        row-gap: 30px;
+    }
+
+    .sign-small form input{
+        width: 80%;
+        height: 30px;
+        text-align: center;
+        border: 1px solid rgb(202, 187, 187);
+        box-shadow: 3px 3px 3px rgb(197, 188, 188);
+        border-radius: 5px;
+        outline: none;
+        background-color: rgb(227, 227, 251);
+    }
+
+    .sign-small form button{
+        width: 40%;
+        text-align: center;
+        height: 30px;
+        background-color: rgb(126, 126, 248);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        color: white;
+        transition: all 0.3s ease;
+    }
+
+    .sign-small form button:disabled{
+        color: rgb(215, 202, 202);     
+        cursor: not-allowed;
+    }
+
+    .register-small{
+         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .register-small form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        row-gap: 30px;
+    }
+
+    .register-small form input{
+        width: 80%;
+        height: 30px;
+        text-align: center;
+        border: 1px solid rgb(202, 187, 187);
+        box-shadow: 3px 3px 3px rgb(197, 188, 188);
+        border-radius: 5px;
+        outline: none;
+        background-color: rgb(227, 227, 251);
+    }
+
+    .register-small form button{
+        width: 40%;
+        text-align: center;
+        height: 30px;
+        background-color: rgb(126, 126, 248);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        color: white;
+        transition: all 0.3s ease;
+    }
+
+    .register-small form button:disabled{
+        color: rgb(215, 202, 202);     
+        cursor: not-allowed;
+    }
+
+    .small-home{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .small-home header{
+        width: 100%;
+        height: fit-content;
+        padding: 10px 3%;
+        display: flex;
+        /*background-color: green;*/
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    .small-home header nav{
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    .small-home header nav .link-home{
+       text-decoration: none;
+       color: black;
+       font-size: 1rem;
+       font-weight: 700;
+       margin-left: 20px;
+       transition: all 0.3s ease; 
+    }
+
+    .small-home header nav .link-home:hover{
+        color: rgb(126, 126, 248);
+    }
+
+    .add-home-small {
+        width: 100%;
+        min-height: 70vh;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /*background-color: orange;*/
+    }
+
+    .add-box-small{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /*background-color: red;*/
+    }
+
+    .add-box-small form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .add-box-small form input{
+        width: 80%;
+        height: 30px;
+        text-align: center;
+        border: 1px solid rgb(202, 187, 187);
+        box-shadow: 3px 3px 3px rgb(197, 188, 188);
+        border-radius: 5px;
+        outline: none;
+        background-color: rgb(227, 227, 251);
+    }
+
+    .add-box-small form button{
+        width: 40%;
+        text-align: center;
+        height: 30px;
+        background-color: rgb(126, 126, 248);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        color: white;
+        transition: all 0.3s ease;
+        margin-top: 30px; 
+    }
+
+    .add-box-small form button:disabled{
+        color: rgb(215, 202, 202);     
+        cursor: not-allowed;
+    }
+
+    .notelist-page-small{
+        width: 100%;
+        min-height: 70vh;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /*background-color: orange;*/
+    }
+
+    .notelist-box-small{
+         width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /*background-color: red;*/
+    }
+
+    .box-small{
+        width: 60%;
+        height: 200px;
+        /*background-color: blue;*/
+        margin-top: 30px;
+        padding: 40px 5%;
+        border: 1px solid rgb(202, 187, 187);
+        box-shadow: 6px 6px 6px rgb(197, 188, 188);
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: auto;
+        z-index: 99;
+    }
+
+    .delete-note-small{
+        width: 80px; /* make it larger so text fits */
+        height: fit-content;
+        z-index: 100;
+        background-color: rgb(126, 126, 248);
+        padding-left: 4px;
+        position: absolute;
+        top: -37px;   /* relative to the clicked note container */
+        left: 7px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        color: white;
+    }
+
+    .account-page-small{
+        width: 100%;
+        min-height: 70vh;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /*background-color: orange;*/
+    }
+
+    .account-info-small{
+         width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /*background-color: red;*/
+    }
+
+    .accounts-buttons-small{
+        display: flex;
+        column-gap: 20px; 
+    }
+
+    .accounts-buttons-small button{
+        border: none;
+        background-color: rgb(126, 126, 248);
+        border-radius: 5px;
+        color: white;
+        padding: 8px;
+        cursor: pointer;   
+        transition: all 0.3s ease;
+    }
+
+    .accounts-buttons-small button:hover{
+        background-color: rgb(133, 133, 250);
+    }
+
+}

@@ -1,0 +1,74 @@
+import {motion} from 'framer-motion' ; 
+import {Link , Routes , Route} from 'react-router-dom'
+import HomePage from './navigate/HomePage';
+import TodoList from './navigate/TodoList';
+import ModifyPage from './navigate/ModifyPage';
+import DeletePage from './navigate/DeletePage';
+
+import './App.css'
+
+function App(){
+return(
+  <>
+     <div className="large">
+       <header>
+          <motion.div
+          initial={{y:-200}}
+          animate={{y:0}}
+          transition={{duration:0.6}}
+          >
+            <h1><span>Todo</span>.App</h1>
+          </motion.div>
+  
+          <nav>
+            <motion.div
+            initial={{opacity:0}}
+            animate={{opacity:[0,0.5,1]}}
+            transition={{duration:0.4 , delay:0.7}}
+            >
+              <Link to="/" className='link'>Home</Link> 
+            </motion.div>
+
+            <motion.div
+            initial={{opacity:0}}
+            animate={{opacity:[0,0.5,1]}}
+            transition={{duration:0.4 , delay:0.8}}
+            >
+              <Link to="/todolist" className='link'>TodoList</Link> 
+            </motion.div>
+
+            <motion.div
+            initial={{opacity:0}}
+            animate={{opacity:[0,0.5,1]}}
+            transition={{duration:0.4 , delay:0.9}}
+            >
+              <Link to="/modify" className='link'>Modify</Link> 
+            </motion.div>
+
+            <motion.div
+            initial={{opacity:0}}
+            animate={{opacity:[0,0.5,1]}}
+            transition={{duration:0.4 , delay:1.0}}
+            >
+              <Link to="/delete" className='link'>Delete</Link> 
+            </motion.div>
+
+          </nav>
+       </header>
+     </div>
+
+     <div className="small" style={{display:"none"}}>
+
+     </div>
+
+     <Routes>
+       <Route path='/' element={<HomePage/>}/>
+       <Route path='/todolist' element={<TodoList/>}/>
+       <Route path='/modify' element={<ModifyPage/>}/>
+       <Route path='/delete' element={<DeletePage/>}/>
+     </Routes>
+  </>
+)
+}
+
+export default App ; 
