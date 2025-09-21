@@ -10,7 +10,7 @@ app.use(cors()) ;
 app.use(express.json()) ; 
 async function run() {
     try{
-       await mongoose.connect("mongodb+srv://nrnaitsaidi_db_user:rLKMCeuC6kzuMrjw@merncluster.pkv2lc8.mongodb.net/todoapp?retryWrites=true&w=majority&appName=mernCluster") ;
+       await mongoose.connect(process.env.MONGO_URI) ;
        console.log("Connected ✅") ;
        const Schema = new mongoose.Schema({
          username:String , 
