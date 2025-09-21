@@ -4,11 +4,12 @@ const mongoose = require('mongoose') ;
 const app = express() ; 
 const cors = require('cors') ;
 app.use(cors()) ; 
-app.use(express.json()) ; 
+app.use(express.json()) ;
+require('dotenv').config() ;  
 async function run() {
     try{
        
-       await mongoose.connect("MONGO_URI=mongodb+srv://nrnaitsaidi_db_user:rLKMCeuC6kzuMrjw@merncluster.pkv2lc8.mongodb.net/todoapp?retryWrites=true&w=majority&appName=mernCluster") ;
+       await mongoose.connect(process.env.MONGO_URI);
        console.log("Connected ✅") ;
        const Schema = new mongoose.Schema({
          username:String , 
