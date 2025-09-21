@@ -4,12 +4,11 @@ const mongoose = require('mongoose') ;
 const app = express() ; 
 const cors = require('cors') ;
 app.use(cors()) ; 
-app.use(express.json()) ;
-require('dotenv').config() ;  
+app.use(express.json()) ;  
 async function run() {
     try{
        
-       await mongoose.connect(process.env.MONGO_URI);
+       await mongoose.connect("mongodb://127.0.0.1:27017/todoapp");
        console.log("Connected ✅") ;
        const Schema = new mongoose.Schema({
          username:String , 
